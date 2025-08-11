@@ -13,7 +13,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col">
           {/* Left Side - Call to Action and Logo */}
-          <div className="text-center lg:text-left">
+          <div className="text-left">
             <h2 className="text-3xl md:text-6xl font-thin text-white mb-4 leading-tight">
               Ready to Serve Your Next Event
               <br />

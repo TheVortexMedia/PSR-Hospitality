@@ -4,36 +4,48 @@ export const stats = [
     number: "50,000+",
     title: "Meals Served",
     description:
-      "Every plate counts. We've successfully delivered over 50,000 meals, maintaining consistency in taste, nutrition, and hygiene.",
+      `We have delivered over 50,000 meals while maintaining high standards of
+quality, nutrition, and hygiene. Every plate reflects our commitment to
+exceptional taste, freshness, and customer satisfaction.
+`,
   },
   {
     number: "2000+",
     title: "Maximum Capacity",
     description:
-      "Seamlessly served large groups while maintaining food quality and service excellence.",
+      `We have successfully served 2,000+ guests at single events without
+compromising on taste, freshness, or service quality. From meticulous
+preparation to flawless plating, every detail is managed to ensure a smooth and
+enjoyable dining experience.`,
   },
   {
     number: "200+",
     title: "Campus Events",
     description:
-      "Successfully catered college fests, cultural meets, and technical symposiums across Bangalore's educational institutions.",
+      `We have successfully catered over 200 campus events, including college fests,
+cultural programs, and technical symposiums across Bangalore’s top
+educational institutions. Our catering services provide fresh, delicious meals
+tailored to large student and faculty gatherings.`,
   },
   {
-    number: "50",
+    number: "50+",
     title: "Corporate Partners",
     description:
-      "Trusted by corporations for productive team lunches, company days, and events with professional service for all corporate gatherings.",
+      `We are trusted by over 50 corporate clients for product launches, conferences,
+team lunches, and training sessions. Our menus are designed to suit diverse
+tastes while ensuring professional, timely, and reliable catering service.`,
   },
 ];
 
 export const clients = [
   {
     name: "SV College Of Engineering",
-    logo: "/images/clients/Acharya.png",
+    logo: "/images/clients/SVCE.png",
   },
   {
     name: "Acharya Institute of Technology",
-    logo: "/images/clients/SVCE.png",
+    logo: "/images/clients/Acharya.png",
+
   },
   {
     name: "Tentworks Interactive",
@@ -47,16 +59,43 @@ export const clients = [
 
 export const testimonial = [
   {
-    text: "We recently partnered with PSR Hospitality for a corporate event, and I must say, everything was handled with great professionalism. From setup to service, they made the entire catering experience smooth and stress-free. Would definitely recommend them for both office events and large gatherings.",
-    author: "Adharsh R",
-    role: "customer",
+    text: `PSR Hospitality catered for our cricket matches and team celebrations, serving
+more than 200 players and guests. The food was fresh, tasty, and served exactly
+on time. Their team made sure the menu had enough variety to keep everyone
+happy. It was a truly professional catering service that matched the energy of
+the event.`,
+    author: "Rahul Verma",
+    role: "Cricket Team Owner",
     rating: 5,
     avatar: "/images/bg.png",
   },
   {
-    text: "It was great working with PSR Hospitality. The food was delicious and the service was top-notch. Highly recommend for any corporate event.",
-    author: "Aditya",
-    role: "customer",
+    text: `For our housewarming ceremony, PSR Hospitality provided delicious meals that
+all our guests enjoyed. The service was smooth from start to finish, and every
+dish was cooked perfectly. They made sure to keep everything clean and wellpresented. It felt like a special occasion made even better by great food and
+friendly staff`,
+    author: "Ananya Rao",
+    role: "Housewarming Host",
+    rating: 5,
+    avatar: "/images/bg.png",
+  },
+  {
+    text: `The food at our hostel is something I look forward to every day. PSR Hospitality
+serves fresh and tasty meals that are always on time and well-prepared. The
+hygiene is very good, and the menu has many different dishes so it never gets
+boring. It feels like enjoying a home-cooked meal even when I am far from
+home.`,
+    author: "Ankitha",
+    role: "B.Sc Nursing Student",
+    rating: 5,
+    avatar: "/images/bg.png",
+  },
+  {
+    text: `With PSR Hospitality, hostel meals are no longer plain or repetitive. The food is
+fresh, healthy, and full of flavor. They serve meals on time and keep everything
+very clean. The variety they offer makes eating here a happy part of my day.`,
+    author: "Shakthi",
+    role: "B.Sc Nursing Student",
     rating: 5,
     avatar: "/images/bg.png",
   },

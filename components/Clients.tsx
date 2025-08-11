@@ -1,21 +1,33 @@
-// components/Testimonials.tsx
 "use client";
 import { clients } from "@/lib/data";
 import { motion } from "motion/react";
 import Image from "next/image";
 
 export function Clients() {
-  // Duplicate testimonials for seamless infinite scroll
+  // Duplicate testimonials twice for seamless loop
   const duplicatedTestimonials = [...clients, ...clients, ...clients];
 
+  // Width of one item including gap (w-64 = 256px, gap = 32px)
+  const itemWidth = 256 + 32;
+  const totalWidth = clients.length * itemWidth;
+
   return (
-    <section className="py-16 overflow-hidden" style={{ background: 'linear-gradient(to bottom right, #e2e8f0, #f1f5f9, #cbd5e1)' }}>
+    <section
+      className="py-16 overflow-hidden"
+      style={{
+        background:
+          "linear-gradient(to bottom right, #e2e8f0, #f1f5f9, #cbd5e1)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className=" mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 italic" style={{ color: '#214280' }}>
+        <div className="mb-12">
+          <h2
+            className="text-3xl md:text-6xl font-light mb-4 italic"
+            style={{ color: "#214280" }}
+          >
             Clients Who Trust Us
           </h2>
-          <p className="md:w-1/2" style={{ color: '#214280' }}>
+          <p className="md:w-1/2" style={{ color: "#214280" }}>
             From our early days, we&apos;ve been providing reliable service to our clientele.
             We&apos;ve had the honor of being the firm of choice of the following corporations:
           </p>
@@ -24,29 +36,22 @@ export function Clients() {
         {/* Infinite scrolling container */}
         <div className="relative">
           <motion.div
-            className="flex flex-row-reverse gap-8"
-            initial={{
-              x: `-${clients.length * (384 + 32)}px`, // Start off-screen to the left
-            }}
-            animate={{
-              x: [0, `${clients.length * (384 + 32)}px`], // Move from left to right
-            }}
+            className="flex gap-8"
+            animate={{ x: [-totalWidth, 0] }} // scroll left
             transition={{
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: clients.length * 4, // Adjust speed as needed
+                duration: clients.length * 2, // adjust speed
                 ease: "linear",
               },
             }}
           >
             {duplicatedTestimonials.map((item, index) => (
-              <motion.div
+              <div
                 key={`${item.name}-${index}`}
                 className="flex-shrink-0 w-64 relative overflow-hidden"
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                {/* Customer info section */}
                 <div className="flex flex-col items-center">
                   {item.logo && (
                     <div className="overflow-hidden w-full">
@@ -65,7 +70,7 @@ export function Clients() {
                     </h3>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>

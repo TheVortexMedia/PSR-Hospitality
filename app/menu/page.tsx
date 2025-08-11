@@ -1,10 +1,5 @@
 import Menu from "@/components/Menu";
-import { DM_Serif_Display } from "next/font/google";
 
-const serifFont = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 const MenuPage = () => {
   return (
     <div>
@@ -20,12 +15,12 @@ const MenuPage = () => {
           className="absolute inset-0 w-full h-full flex items-center justify-center"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(33, 66, 128, 0.75), rgba(33, 66, 128, 0.75))",
+              "linear-gradient(to bottom right, rgba(33, 66, 128, 0.5), rgba(33, 66, 128, 0.5))",
           }}
         >
           {/* Content */}
-          <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-            <h1 className={`text-5xl lg:text-8xl font-light leading-tight italic text-center ${serifFont.className}`}>
+          <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4">
+            <h1 className={`text-5xl lg:text-8xl font-light leading-tight italic text-center font-georgia`}>
               Custom Catering Menu
             </h1>
           </div>

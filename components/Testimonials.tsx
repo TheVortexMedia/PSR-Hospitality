@@ -1,22 +1,31 @@
-// components/Testimonials.tsx
 "use client";
 import { testimonial } from "@/lib/data";
 import { motion } from "motion/react";
 import Image from "next/image";
 
 export function Testimonials() {
-  // Duplicate testimonials for seamless infinite scroll
+  // Duplicate at least twice for seamless looping
   const duplicatedTestimonials = [
     ...testimonial,
     ...testimonial,
     ...testimonial,
   ];
 
+  const cardWidth = 340;
+  const gap = 32;
+  const singleSetWidth = testimonial.length * (cardWidth + gap);
+
   return (
-    <section className="py-16 overflow-hidden" style={{ background: 'url(/images/3.png)' }}>
+    <section
+      className="py-16 overflow-hidden"
+      style={{ background: "url(/images/3.png)" }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className=" mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 italic" style={{ color: '#214280' }}>
+        <div className="mb-12">
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-4 italic"
+            style={{ color: "#214280" }}
+          >
             What Our Customers Say
           </h2>
         </div>
@@ -25,31 +34,22 @@ export function Testimonials() {
         <div className="relative">
           <motion.div
             className="flex flex-row-reverse gap-8"
-            initial={{
-              x: `-${testimonial.length * (340 + 32)}px`, // Start off-screen to the left
-            }}
-            animate={{
-              x: [0, `${testimonial.length * (340 + 32)}px`], // Move from left to right
-            }}
+            animate={{ x: [0, singleSetWidth] }} // Rightward motion
             transition={{
-              x: {
-                repeat: Infinity,
-                repeatType: "loop",
-                duration: testimonial.length * 4, // Adjust speed as needed
-                ease: "linear",
-              },
+              duration: testimonial.length * 4, // Speed control
+              ease: "linear",
+              repeat: Infinity,
             }}
+            style={{ willChange: "transform" }}
           >
             {duplicatedTestimonials.map((item, index) => (
-              <motion.div
+              <div
                 key={`${item.author}-${index}`}
-                className="flex-shrink-0 w-85 h-[420px] rounded-2xl shadow-2xl relative overflow-hidden"
-                style={{ background: 'linear-gradient(to bottom right, #214280, #214280, #214280)' }}
-                whileHover={{
-                  scale: 1.02,
-                  backgroundColor: "rgba(255, 255, 255, 0.15)",
+                className="flex-shrink-0 w-[340px] h-[420px] rounded-2xl shadow-2xl relative overflow-hidden"
+                style={{
+                  background:
+                    "linear-gradient(to bottom right, #214280, #214280, #214280)",
                 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
                 {/* Quote mark */}
                 <div className="absolute top-4 right-6 text-6xl text-white/20 font-serif">
@@ -71,14 +71,10 @@ export function Testimonials() {
                       </div>
                     )}
                     <div>
-                      <h3
-                        className="text-xl font-bold text-white"
-                      >
+                      <h3 className="text-xl font-bold text-white">
                         {item.author}
                       </h3>
-                      <p
-                        className="text-muted text-sm font-light"
-                      >
+                      <p className="text-muted text-sm font-light">
                         {item.role}
                       </p>
                     </div>
@@ -86,10 +82,8 @@ export function Testimonials() {
 
                   <div className="px-6">
                     {/* Testimonial text */}
-                    <div
-                      className="mb-4"
-                    >
-                      <p className="text-white leading-relaxed text-base font-light">
+                    <div className="mb-4">
+                      <p className="text-white leading-relaxed text-base font-thin">
                         &quot;{item.text}&quot;
                       </p>
                     </div>
@@ -124,7 +118,7 @@ export function Testimonials() {
                     </motion.div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </motion.div>
         </div>

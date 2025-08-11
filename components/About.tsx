@@ -12,16 +12,15 @@ const About = () => {
     <section className="bg-gray-50 space-y-16 pt-16">
       <div className="w-11/12 md:w-10/12 mx-auto">
         {/* Left Side - Text Content */}
-        <div className="flex flex-col justify-center md:justify-between md:flex-row items-center">
+        <div className="flex flex-col justify-center md:justify-between md:flex-row items-start gap-5">
           <h2
-            className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight"
+            className="text-4xl md:text-6xl leading-tight font-light italic"
             style={{ color: "#214280" }}
           >
             Make Every
-            <br />
             Meal
             <br />
-            <span className="italic">Memorable.</span>
+            Memorable.
           </h2>
 
           <p
@@ -61,7 +60,7 @@ const About = () => {
             </h3>
 
             <h4
-              className={`text-white text-2xl md:text-3xl lg:text-4xl font-light italic leading-relaxed mb-8 ${serifFont.className}`}
+              className={`text-white text-4xl md:text-6xl font-thin italic leading-relaxed mb-8 font-georgia`}
             >
               Catering Solutions For Every Need.
             </h4>

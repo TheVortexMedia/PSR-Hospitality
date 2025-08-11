@@ -1,13 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { DM_Serif_Display } from "next/font/google";
 import React, { useState } from "react";
-
-const serifFont = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -51,7 +45,7 @@ const ContactPage = () => {
         {/* Content */}
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto px-4">
           <h1
-            className={`text-5xl lg:text-8xl font-light leading-tight italic text-center ${serifFont.className}`}
+            className={`text-5xl lg:text-6xl font-georgia font-light leading-tight italic text-center`}
             style={{ color: "white" }}
           >
             Contact Us
@@ -130,7 +124,7 @@ const ContactPage = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+91 9087654321"
                   />
                 </div>
 

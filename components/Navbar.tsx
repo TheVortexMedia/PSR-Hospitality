@@ -1,115 +1,78 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { AlignRight, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
+
   const router = useRouter();
 
-  const navItems = [
+  const nav = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/menu", label: "Menu" },
   ];
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
   const closeMenu = () => {
     setIsOpen(false);
   };
 
-  useEffect(() => {
-    const controlNavbar = () => {
-      const currentScrollY = window.scrollY;
-
-      // Show navbar when scrolling down after 100px
-      if (currentScrollY > 100) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-
-      setLastScrollY(currentScrollY);
-    };
-
-    window.addEventListener("scroll", controlNavbar);
-    return () => window.removeEventListener("scroll", controlNavbar);
-  }, [lastScrollY]);
-
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 flex items-center justify-center h-16 z-50 transition-transform duration-300 ease-in-out ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        }`}
-        style={{ backgroundColor: "#214280" }}
+        className={`fixed w-full top-0 z-40 border-b border-white/15 backdrop-blur supports-[backdrop-filter]:bg-[#0f1f49]/60`}
       >
-        <div className="flex items-center justify-between w-11/12 md:w-10/12">
-          <img src="/images/logo.png" alt="" className="w-36 " />
+        <div className="mx-auto max-w-7xl px-4 h-16 flex items-center gap-4 justify-between">
+          <Image
+            src="/images/logo.png"
+            width={1000}
+            height={1000}
+            alt=""
+            className="w-36 "
+          />
 
-          {/* Desktop Navigation */}
-          <div
-            className="hidden md:flex items-center gap-16 text-sm"
-            style={{ color: "#FBD65D" }}
-          >
+          <div className="ml-auto hidden md:flex items-center gap-6">
+            <nav className="hidden md:flex items-center gap-6 ml-8">
+              {nav.map((n) => (
+                <Link
+                  key={n.href}
+                  href={n.href}
+                  className="text-sm text-white/85 hover:text-white transition-colors uppercase font-medium"
+                >
+                  {n.label}
+                </Link>
+              ))}
+            </nav>
+            <div className="h-6 bg-zinc-400/30 w-px" />
+
             <Link
-              href="/"
-              className="transition-colors"
-              style={{ color: "#FBD65D" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#f59e0b")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#FBD65D")}
+              href="tel:+919900006840"
+              aria-label="Call us"
+              className="text-sm text-white"
             >
-              Home
+              +91 8919684575
             </Link>
-            <Link
-              href="/about"
-              className="transition-colors"
-              style={{ color: "#FBD65D" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#f59e0b")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#FBD65D")}
+            <Button
+              className="hidden md:block transition-colors hover:opacity-90"
+              style={{ backgroundColor: "#FBD65D", color: "#1c3f60" }}
+              onClick={() => router.push("/contact")}
             >
-              About
-            </Link>
-            <Link
-              href="/menu"
-              className="transition-colors"
-              style={{ color: "#FBD65D" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#f59e0b")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#FBD65D")}
-            >
-              Menu
-            </Link>
+              Enquire now
+            </Button>
           </div>
-
-          {/* Desktop Contact Button */}
           <Button
-            size="sm"
-            className="hidden md:block transition-colors hover:opacity-90"
-            style={{ backgroundColor: "#FBD65D", color: "#1c3f60" }}
-            onClick={() => router.push("/contact")}
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden"
+            variant="ghost"
+            size="icon"
           >
-            Contact Us Now
+            <AlignRight className="size-5 text-white" />
           </Button>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMenu}
-            className="md:hidden transition-colors"
-            style={{ color: "#FBD65D" }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#f59e0b")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#FBD65D")}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
       </header>
 
@@ -155,7 +118,7 @@ export function Navbar() {
           {/* Menu Items */}
           <nav className="flex-1 px-6 py-8">
             <ul className="space-y-6">
-              {navItems.map((item) => (
+              {nav.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -178,7 +141,10 @@ export function Navbar() {
           {/* Mobile Contact Button */}
           <div className="p-6 border-t" style={{ borderColor: "#214280" }}>
             <Button
-              onClick={closeMenu}
+              onClick={() => {
+                router.push("/contact");
+                closeMenu();
+              }}
               className="w-full transition-colors hover:opacity-90"
               style={{ backgroundColor: "#FBD65D", color: "#214280" }}
             >
