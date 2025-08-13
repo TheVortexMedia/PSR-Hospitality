@@ -1,4 +1,5 @@
 import { Clients } from "@/components/Clients";
+import { FAQ } from "@/components/FAQ";
 import Image from "next/image";
 
 const AboutPage = () => {
@@ -65,6 +66,7 @@ const AboutPage = () => {
       </div>
 
       <Clients />
+      <FAQ />
     </div>
   );
 };

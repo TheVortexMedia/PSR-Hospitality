@@ -9,7 +9,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger
+  DialogTrigger,
 } from "@/components/ui/dialog";
 import { useState } from "react";
 
@@ -35,7 +35,7 @@ export function Hero() {
       <Image
         width={4000}
         height={4000}
-        src="/images/Modern Coffee Shop Scene.png"
+        src="/images/main.png"
         alt=""
         className="w-full h-full object-cover"
       />
@@ -56,9 +56,9 @@ export function Hero() {
           className="w-56"
         />
         {/* Content */}
-        <div className="relative z-10 text-center text-white mx-auto px-4">
+        <div className="relative z-10 text-center text-[#FBD65D] mx-auto px-4">
           <h1
-            className={`text-4xl md:text-8xl font-thin mb-6 leading-tight italic font-georgia`}
+            className={`text-4xl md:text-7xl font-thin mb-6 leading-tight italic font-georgia`}
           >
             Delightful Catering, Exceptional Hospitality
           </h1>

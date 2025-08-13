@@ -9,6 +9,8 @@ export function Testimonials() {
     ...testimonial,
     ...testimonial,
     ...testimonial,
+    ...testimonial,
+    ...testimonial,
   ];
 
   const cardWidth = 340;
@@ -34,7 +36,7 @@ export function Testimonials() {
         <div className="relative">
           <motion.div
             className="flex flex-row-reverse gap-8"
-            animate={{ x: [0, singleSetWidth] }} // Rightward motion
+            animate={{ x: [singleSetWidth, 0] }} // Leftward motion
             transition={{
               duration: testimonial.length * 4, // Speed control
               ease: "linear",

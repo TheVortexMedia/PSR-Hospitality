@@ -5,7 +5,13 @@ import Image from "next/image";
 
 export function Clients() {
   // Duplicate testimonials twice for seamless loop
-  const duplicatedTestimonials = [...clients, ...clients, ...clients];
+  const duplicatedTestimonials = [
+    ...clients,
+    ...clients,
+    ...clients,
+    ...clients,
+    ...clients,
+  ];
 
   // Width of one item including gap (w-64 = 256px, gap = 32px)
   const itemWidth = 256 + 32;
@@ -28,8 +34,9 @@ export function Clients() {
             Clients Who Trust Us
           </h2>
           <p className="md:w-1/2" style={{ color: "#214280" }}>
-            From our early days, we&apos;ve been providing reliable service to our clientele.
-            We&apos;ve had the honor of being the firm of choice of the following corporations:
+            From our early days, we&apos;ve been providing reliable service to
+            our clientele. We&apos;ve had the honor of being the firm of choice
+            of the following corporations:
           </p>
         </div>
 
@@ -37,7 +44,7 @@ export function Clients() {
         <div className="relative">
           <motion.div
             className="flex gap-8"
-            animate={{ x: [-totalWidth, 0] }} // scroll left
+            animate={{ x: [0, -totalWidth] }} // scroll right
             transition={{
               x: {
                 repeat: Infinity,

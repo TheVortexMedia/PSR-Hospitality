@@ -1,83 +1,99 @@
+"use client"
 import React from "react";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const Menu = () => {
+  const router = useRouter();
   const menuSections = [
     {
       title: "South Indian Menu",
-      discount: "10% OFF",
-      price: "₹ 270/Plate Onwards",
-      originalPrice: "₹ 300",
-      items: [
-        `Rice, Ghee, Thove (Tadka Dal), Palya (Dry Sabji), Kosambari (Salad)
-        Sambar / Dal / Pappu / Muligie Hull, Rasam, Papad, Lemon Rice/Puliyogare/Vangibath
-        Payasam, Sweet, Salt, Pickle, Curd
-        Banana Leaf / Areca Plates, Tissue, 20L Water Can, Water Glass, Table Roll`,
+      description:
+        "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
+      image: "/images/4.png",
+      menuItems: [
+        `Idli / Vada / Bonda
+        Upma / Khara Bath
+        Chow-Chow Bath
+        Set Dosa with Sweet
+        Masala Dosa
+        Vegetable Upma / Rava Kesari
+        Pongal / Tamarind Rice / Lemon Rice
+        Vegetable Sambar / Rasam / Dal
+        Curd Rice
+        Vegetable Curry / Sagu
+        Mangalore Bajji
+        Plain Rice
+        Papad, Pickle, Salad`,
       ],
-      image: "/images/food/food3.JPG",
     },
     {
       title: "North Indian Menu",
-      discount: "10% OFF",
-      price: "₹ 315/Plate Onwards",
-      originalPrice: "₹ 350",
-      items: [
-        `Rice, Jeera Rice, Dal Tadka/Dal Makhani
-        Veg Pulav, Paneer Gravy, Chana Masala, Bhindi Masala, Aloo Fry
-        Papad, Soup, French Fries / Gobi Manchurian / Baby Corn Manchurian
-        Banana Leaf / Areca Plates, Tissue, 500ml Water Bottle, Table Roll`,
+      description:
+        "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
+      image: "/images/4.png",
+      menuItems: [
+        `Chapathi / Poori / Batura
+          Rumali Roti / Naan / Kulcha / Tandoori Roti
+          North Indian Veg Curry / Paneer Butter Masala / Kadai Paneer
+          Chole Masala / Rajma Curry / Dal Fry / Dal Makhani
+          Aloo Gobi / Mixed Vegetable Curry
+          Vegetable Pulao / Biryani (Basmati)
+          Raita / Curd
+          Sweet (Gulab Jamun, Rasgulla, Badam Puri, Kesari Bath)
+          Salad, Papad, Pickle`,
       ],
-      image: "/images/food/food2.JPG",
     },
     {
       title: "Buffet Menu (Ideal for Events)",
-      discount: "10% OFF",
-      price: "₹ 315/Plate Onwards",
-      originalPrice: "₹ 350",
-      items: [
+      description:
+        "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
+      image: "/images/4.png",
+      menuItems: [
         `Welcome Drink: Lemon Juice / Jaljeera / Buttermilk
-        Soup: Tomato / Sweet Corn / Hot & Sour
-        Chaat Counter: Pani Puri / Bhel Puri / Masala Puri
-        Starters: Gobi Manchurian / Babycorn Manchurian / Paneer Tikka / Aloo Kabab
-        Main Course: North Indian Curries, South Indian Specialties, Biryani / Pulao / Jeera Rice, Dal Fry / Dal Tadka, Veg Kurma / Paneer Curry`,
+          Soup (Tomato / Sweet Corn / Hot & Sour)
+          Chaat Counter: Pani Puri / Bhel Puri / Masala Puri
+          Starters: Gobi Manchurian / Babycorn Manchurian / Paneer Tikka / Aloo Kabab
+          Main Course:
+          North Indian Curries
+          South Indian Specialties
+          Biryani / Pulao / Jeera Rice
+          `,
       ],
-      image: "/images/food/food3.JPG",
     },
     {
       title: "Non-Veg Menu",
-      discount: "10% OFF",
-      price: "₹ 315/Plate Onwards",
-      originalPrice: "₹ 350",
-      items: [
+      description:
+        "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
+      image: "/images/4.png",
+      menuItems: [
         `Chicken Curry (Andhra / Punjabi Style)
-        Pepper Chicken / Chicken 65 / Chicken Kabab
-        Chicken Biryani (Basmati)
-        Mutton Curry (Optional)
-        Egg Curry / Egg Masala
-        Chicken Manchurian / Chilli Chicken
-        Raita, Salad, Papad, Pickle`,
+          Pepper Chicken / Chicken 65 / Chicken Kabab
+          Chicken Biryani (Basmati)
+          Mutton Curry (optional for special occasions)
+          Egg Curry / Egg Masala
+          Chicken Manchurian / Chilli Chicken
+          Raita, Salad, Papad, Pickle`,
       ],
-      image: "/images/food/food4.jpeg",
     },
     {
       title: "Snacks Menu",
-      discount: "10% OFF",
-      price: "₹ 315/Plate Onwards",
-      originalPrice: "₹ 350",
-      items: [
-        `Samosa, Vada / Masala Vada, Cutlet (Veg / Aloo)
-        Sandwich (Veg / Grilled)
-        Chilli Bajji / Aloo Bajji, Onion Pakoda / Onion Bonda
-        Crispy Vegetables, Mangalore Bajji
-        Biscuits / Cookies
-        Tea / Coffee / Lemon Tea
-        Sandwich (Veg / Grilled)
-        Chilli Bajji / Aloo Bajji, Onion Pakoda / Onion Bonda
-        Crispy Vegetables, Mangalore Bajji
-        Biscuits / Cookies
-        Tea / Coffee / Lemon Tea`,
+      description:
+        "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
+      image: "/images/4.png",
+      menuItems: [
+        `Samosa
+          Vada / Masala Vada
+          Cutlet (Veg / Aloo)
+          Sandwich (Veg / Grilled)
+          Chilli Bajji / Aloo Bajji
+          Onion Pakoda / Onion Bonda
+          Crispy Vegetables
+          Mangalore Bajji
+          Biscuits / Cookies
+          Tea / Coffee / Lemon Tea`,
       ],
-      image: "/images/food/food4.jpeg",
     },
   ];
 
@@ -86,16 +102,16 @@ const Menu = () => {
       className="py-16"
       style={{ background: "linear-gradient(to bottom, #FEF3C7, #FBD65D)" }}
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="w-11/12 md:w-10/12 max-w-2xl mx-auto">
         {/* Menu Grid */}
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           {menuSections.map((section, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-lg flex flex-row-reverse items-center justify-between h-90"
+              className="bg-white rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row-reverse items-center justify-center min-h-80"
             >
               {/* Food Image */}
-              <div className="relative h-full w-[45%] overflow-hidden">
+              <div className="relative h-56 md:h-full overflow-hidden w-full md:w-[45%]">
                 <Image
                   src={section.image}
                   alt={section.title}
@@ -108,40 +124,30 @@ const Menu = () => {
               </div>
 
               {/* Content */}
-              <div className="flex-1 h-full flex flex-col items-center justify-center px-6 gap-3">
+              <div className="p-4 flex-1 space-y-4 flex flex-col border h-11/12 my-3 mx-3 rounded-lg border-[#d4a50c]/25">
                 {/* Title */}
                 <h3
-                  className="text-xl font-bold uppercase text-center underline"
+                  className="text-lg font-bold mb-2 text-center"
                   style={{ color: "#214280" }}
                 >
                   {section.title}
                 </h3>
 
-                {/* Description */}
-                <p className="text-[#FBD65D] text-lg leading-relaxed text-center font-bold">
-                  {section.discount}
+                {/* Menu Items */}
+                <p className="text-xs leading-6 font-light text-muted-foreground text-center px-2">
+                  {section.menuItems}
                 </p>
 
-                {/* Menu Items */}
-                <div className="space-y-4">
-                  {section.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="">
-                      <p className="text-gray-600 text-xs leading-relaxed text-center">
-                        {item}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-
-                <h4
-                  className="text-xl font-bold mt-3 uppercase text-center"
-                  style={{ color: "#214280" }}
-                >
-                  {section.price}{" "}
-                  <span className="line-through text-lg text-muted-foreground ml-1.5">
-                    {section.originalPrice}
-                  </span>
+                <h4 className="text-center text-xs font-black text-[#214280]">
+                  PRICE ON REQUEST
                 </h4>
+
+                <Button
+                  onClick={() => router.push("/contact")}
+                  className="w-full md:w-1/2 mx-auto bg-gradient-to-r from-[#d4a50c] to-[#FBD65D]"
+                >
+                  Enquie now
+                </Button>
               </div>
             </div>
           ))}

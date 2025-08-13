@@ -1,15 +1,15 @@
 "use client";
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // use framer-motion directly
 import { stats } from "@/lib/data";
 
 export function Stats() {
-  // Duplicate at least twice for seamless loop
-  const duplicatedStats = [...stats, ...stats, ...stats];
+  // Duplicate so that the sequence can scroll continuously without visible gaps
+  const duplicatedStats = [...stats, ...stats, ...stats, ...stats, ...stats];
 
-  // Width of one card + gap (in px)
+  // Card + gap width
   const cardWidth = 320;
   const gap = 24;
-  const singleSetWidth = stats.length * (cardWidth + gap);
+  const totalWidth = stats.length * (cardWidth + gap);
 
   return (
     <section
@@ -30,19 +30,22 @@ export function Stats() {
         {/* Infinite scrolling container */}
         <div className="relative">
           <motion.div
-            className="flex gap-6"
-            animate={{ x: [0, -singleSetWidth] }}
+            className="flex gap-6 will-change-transform"
+            style={{ transform: "translate3d(0,0,0)" }}
+            animate={{ x: [-totalWidth, 0] }} // move right continuously
             transition={{
-              duration: stats.length * 3, // Adjust speed
-              ease: "linear",
-              repeat: Infinity,
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: stats.length * 3, // Adjust speed here
+                ease: "linear",
+              },
             }}
-            style={{ willChange: "transform" }}
           >
             {duplicatedStats.map((stat, index) => (
               <div
                 key={`${stat.title}-${index}`}
-                className="flex-shrink-0 w-85 h-96 bg-white/25 backdrop-blur border border-white/20 p-5 rounded-xl shadow-xl flex items-center justify-center group hover:bg-white"
+                className="flex-shrink-0 w-[320px] h-96 bg-white/25 backdrop-blur border border-white/20 p-5 rounded-xl shadow-xl flex items-center justify-center group hover:bg-white"
               >
                 <div className="text-center h-11/12 flex flex-col justify-center">
                   <div className="h-2/5">

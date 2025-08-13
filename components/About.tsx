@@ -1,13 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { DM_Serif_Display } from "next/font/google";
-
-const serifFont = DM_Serif_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { useRouter } from "next/navigation";
 
 const About = () => {
+  const router = useRouter();
   return (
     <section className="bg-gray-50 space-y-16 pt-16">
       <div className="w-11/12 md:w-10/12 mx-auto">
@@ -17,8 +13,7 @@ const About = () => {
             className="text-4xl md:text-6xl leading-tight font-light italic"
             style={{ color: "#214280" }}
           >
-            Make Every
-            Meal
+            Make Every Meal
             <br />
             Memorable.
           </h2>
@@ -27,11 +22,11 @@ const About = () => {
             className="text-lg leading-relaxed max-w-lg"
             style={{ color: "#214280" }}
           >
-            At PSR Hospitality, we go beyond just food — we deliver reliable,
+            At PSR Hospitality, we go beyond just food, we deliver reliable,
             hygienic, and customizable catering solutions tailored for
             institutions, offices, and corporate events. What sets us apart is
-            our ability to scale effortlessly — from daily hostel meals to high-
-            volume corporate gatherings — without compromising on taste,
+            our ability to scale effortlessly from daily hostel meals to high
+            volume corporate gatherings without compromising on taste,
             nutrition, or timeliness.
           </p>
         </div>
@@ -60,7 +55,7 @@ const About = () => {
             </h3>
 
             <h4
-              className={`text-white text-4xl md:text-6xl font-thin italic leading-relaxed mb-8 font-georgia`}
+              className={`text-[#FBD65D] text-4xl md:text-7xl font-thin italic leading-relaxed mb-8 font-georgia`}
             >
               Catering Solutions For Every Need.
             </h4>
@@ -68,6 +63,7 @@ const About = () => {
             <Button
               className="font-medium px-8 py-3 rounded-full transition-colors hover:opacity-90"
               style={{ backgroundColor: "#FBD65D", color: "#1c3f60" }}
+              onClick={() => router.push("/about")}
             >
               Know More
             </Button>
