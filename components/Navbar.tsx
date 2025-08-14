@@ -25,7 +25,7 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed w-full top-0 z-40 border-b border-white/15 backdrop-blur supports-[backdrop-filter]:bg-[#0f1f49]/60`}
+        className={`fixed w-full top-0 z-40 border-b border-white/15 bg-[#214280]`}
       >
         <div className="mx-auto max-w-7xl px-4 h-16 flex items-center gap-4 justify-between">
           <Image
@@ -58,8 +58,7 @@ export function Navbar() {
               +91 8919684575
             </Link>
             <Button
-              className="hidden md:block transition-colors hover:opacity-90"
-              style={{ backgroundColor: "#FBD65D", color: "#1c3f60" }}
+              className="hidden md:block text-xs transition-colors hover:opacity-90 bg-gradient-to-r from-[#bd9102] to-[#e1be49] uppercase font-semibold px-6"
               onClick={() => router.push("/contact")}
             >
               Enquire now
@@ -145,10 +144,9 @@ export function Navbar() {
                 router.push("/contact");
                 closeMenu();
               }}
-              className="w-full transition-colors hover:opacity-90"
-              style={{ backgroundColor: "#FBD65D", color: "#214280" }}
+              className="w-full transition-colors hover:opacity-90 bg-gradient-to-r from-[#bd9102] to-[#fcd553]"
             >
-              Contact Us Now
+              Enquire now
             </Button>
           </div>
         </div>

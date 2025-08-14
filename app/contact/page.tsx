@@ -149,11 +149,7 @@ const ContactPage = () => {
 
                 <Button
                   type="submit"
-                  className="w-full py-5 text-base font-medium rounded-lg transition-all hover:opacity-90"
-                  style={{
-                    backgroundColor: "#FBD65D",
-                    color: "#1c3f60",
-                  }}
+                  className="w-full py-5 text-base rounded-lg transition-all hover:opacity-90 bg-gradient-to-r from-[#d4a50c] to-[#FBD65D] uppercase font-semibold"
                 >
                   Send Message
                 </Button>
@@ -191,7 +187,9 @@ const ContactPage = () => {
                     >
                       Phone
                     </h4>
-                    <p className="text-gray-600 text-sm md:text-base">+91 8919684575</p>
+                    <p className="text-gray-600 text-sm md:text-base">
+                      +91 8919684575
+                    </p>
                   </div>
                 </div>
 

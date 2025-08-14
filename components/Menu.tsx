@@ -1,8 +1,7 @@
-"use client"
-import React from "react";
+"use client";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
+import { Button } from "./ui/button";
 
 const Menu = () => {
   const router = useRouter();
@@ -146,7 +145,7 @@ const Menu = () => {
                   onClick={() => router.push("/contact")}
                   className="w-full md:w-1/2 mx-auto bg-gradient-to-r from-[#d4a50c] to-[#FBD65D]"
                 >
-                  Enquie now
+                  Enquire now
                 </Button>
               </div>
             </div>

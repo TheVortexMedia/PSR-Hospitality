@@ -35,7 +35,7 @@ export function Hero() {
       <Image
         width={4000}
         height={4000}
-        src="/images/main.png"
+        src="/images/Modern Coffee Shop Scene.png"
         alt=""
         className="w-full h-full object-cover"
       />
