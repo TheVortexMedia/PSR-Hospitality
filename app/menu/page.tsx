@@ -27,7 +27,7 @@ const MenuPage = () => {
         </div>
       </section>
       {/* Description Section */}
-      <div className="text-white py-16" style={{ backgroundColor: "#214280" }}>
+      <div className="text-white py-16" style={{ backgroundColor: "#1c3f60" }}>
         <div className="w-11/12 md:w-10/12 mx-auto px-4">
           <div className="space-y-8">
             {/* First Paragraph */}

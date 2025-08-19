@@ -31,7 +31,7 @@ const Menu = () => {
       title: "North Indian Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/food/img (2).jpg",
+      image: "/images/food/img (2).png",
       menuItems: [
         `Chapathi / Poori / Batura
           Rumali Roti / Naan / Kulcha / Tandoori Roti
@@ -65,7 +65,7 @@ const Menu = () => {
       title: "Non-Veg Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/food/img (5).jpg",
+      image: "/images/food/img (5).png",
       menuItems: [
         `Chicken Curry (Andhra / Punjabi Style)
           Pepper Chicken / Chicken 65 / Chicken Kabab
@@ -80,7 +80,7 @@ const Menu = () => {
       title: "Snacks Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/food/img (1).jpg",
+      image: "/images/food/img (1).png",
       menuItems: [
         `Samosa
           Vada / Masala Vada
@@ -98,8 +98,8 @@ const Menu = () => {
 
   return (
     <section
-      className="py-16"
-      style={{ background: "linear-gradient(to bottom, #FEF3C7, #FBD65D)" }}
+      className="py-16 bg-[url('/images/5.png')] bg-cover"
+     // style={{ background: "linear-gradient(to bottom, #FEF3C7, #FBD65D)" }}
     >
       <div className="w-11/12 md:w-10/12 max-w-2xl mx-auto">
         {/* Menu Grid */}
@@ -127,7 +127,7 @@ const Menu = () => {
                 {/* Title */}
                 <h3
                   className="text-lg font-bold mb-2 text-center"
-                  style={{ color: "#214280" }}
+                  style={{ color: "#1c3f60" }}
                 >
                   {section.title}
                 </h3>
@@ -137,7 +137,7 @@ const Menu = () => {
                   {section.menuItems}
                 </p>
 
-                <h4 className="text-center text-xs font-black text-[#214280]">
+                <h4 className="text-center text-xs font-black text-[#1c3f60]">
                   PRICE ON REQUEST
                 </h4>
 

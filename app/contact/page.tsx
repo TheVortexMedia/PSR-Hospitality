@@ -39,7 +39,7 @@ const ContactPage = () => {
         className="relative min-h-[50vh] sm:min-h-[60vh] flex items-center justify-center px-4"
         style={{
           background:
-            "linear-gradient(to bottom right, #1c3f60, #214280, #1c3f60)",
+            "linear-gradient(to bottom right, #1c3f60, #1c3f60, #1c3f60)",
         }}
       >
         {/* Content */}
@@ -62,7 +62,7 @@ const ContactPage = () => {
         <div className="w-full max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl shadow-lg border border-[#214280]/10 p-4 sm:p-6 lg:p-8 w-full">
+            <div className="bg-white rounded-2xl shadow-lg border border-[#1c3f60]/10 p-4 sm:p-6 lg:p-8 w-full">
               <h2
                 className="text-2xl sm:text-3xl lg:text-4xl font-light mb-6 sm:mb-8 text-center"
                 style={{ color: "#1c3f60" }}
@@ -86,7 +86,7 @@ const ContactPage = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all"
                     placeholder="Your full name"
                   />
                 </div>
@@ -105,7 +105,7 @@ const ContactPage = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -123,7 +123,7 @@ const ContactPage = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all"
                     placeholder="+91 9087654321"
                   />
                 </div>
@@ -142,7 +142,7 @@ const ContactPage = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all resize-vertical"
+                    className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all resize-vertical"
                     placeholder="Tell us about your event requirements, dietary preferences, or any special requests..."
                   />
                 </div>

@@ -25,7 +25,7 @@ export function Navbar() {
   return (
     <>
       <header
-        className={`fixed w-full top-0 z-40 border-b border-white/15 bg-[#214280]`}
+        className={`fixed w-full top-0 z-40 border-b border-white/15 bg-[#1c3f60]`}
       >
         <div className="mx-auto max-w-7xl px-4 h-16 flex items-center gap-4 justify-between">
           <Image
@@ -92,12 +92,12 @@ export function Navbar() {
       >
         <div
           className="flex flex-col h-full"
-          style={{ backgroundColor: "#214280" }}
+          style={{ backgroundColor: "#1c3f60" }}
         >
           {/* Menu Header */}
           <div
             className="flex items-center justify-between h-16 border-b px-5"
-            style={{ borderColor: "#214280" }}
+            style={{ borderColor: "#1c3f60" }}
           >
             <h3 className="font-bold text-lg" style={{ color: "#FBD65D" }}>
               PSR Hospitality
@@ -138,7 +138,7 @@ export function Navbar() {
           </nav>
 
           {/* Mobile Contact Button */}
-          <div className="p-6 border-t" style={{ borderColor: "#214280" }}>
+          <div className="p-6 border-t" style={{ borderColor: "#1c3f60" }}>
             <Button
               onClick={() => {
                 router.push("/contact");

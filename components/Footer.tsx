@@ -7,7 +7,7 @@ export function Footer() {
       className="text-white py-16"
       style={{
         background:
-          "linear-gradient(to bottom right, #214280, #214280, #214280)",
+          "linear-gradient(to bottom right, #1c3f60, #1c3f60, #1c3f60)",
       }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

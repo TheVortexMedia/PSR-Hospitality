@@ -55,12 +55,12 @@ export function Stats() {
                     >
                       {stat.number}
                     </div>
-                    <h3 className="text-xl font-semibold group-hover:text-[#214280] text-white mb-3">
+                    <h3 className="text-xl font-semibold group-hover:text-[#1c3f60] text-white mb-3">
                       {stat.title}
                     </h3>
                   </div>
                   <div className="h-2/5 flex items-center">
-                    <p className="text-white leading-relaxed text-sm group-hover:text-[#214280]">
+                    <p className="text-white leading-relaxed text-sm group-hover:text-[#1c3f60]">
                       {stat.description}
                     </p>
                   </div>

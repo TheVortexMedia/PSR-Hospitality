@@ -11,7 +11,7 @@ const About = () => {
         <div className="flex flex-col justify-center md:justify-between md:flex-row items-start gap-5">
           <h2
             className="text-4xl md:text-6xl leading-tight font-light italic"
-            style={{ color: "#214280" }}
+            style={{ color: "#1c3f60" }}
           >
             Make Every Meal
             <br />
@@ -20,7 +20,7 @@ const About = () => {
 
           <p
             className="text-lg leading-relaxed max-w-lg"
-            style={{ color: "#214280" }}
+            style={{ color: "#1c3f60" }}
           >
             At PSR Hospitality, we go beyond just food, we deliver reliable,
             hygienic, and customizable catering solutions tailored for

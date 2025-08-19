@@ -8,7 +8,7 @@ import { Testimonials } from "@/components/Testimonials";
 import Image from "next/image";
 
 const colors = {
-  primary: "#214280", // deep royal blue
+  primary: "#1c3f60", // deep royal blue
   accent: "#FBD65D", // warm yellow
   secondary: "#DB5426", // orange
   dark: "#0f1f49",

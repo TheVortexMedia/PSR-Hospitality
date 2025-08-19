@@ -29,11 +29,11 @@ export function Clients() {
         <div className="mb-12">
           <h2
             className="text-3xl md:text-6xl font-light mb-4 italic"
-            style={{ color: "#214280" }}
+            style={{ color: "#1c3f60" }}
           >
             Clients Who Trust Us
           </h2>
-          <p className="md:w-1/2" style={{ color: "#214280" }}>
+          <p className="md:w-1/2" style={{ color: "#1c3f60" }}>
             From our early days, we&apos;ve been providing reliable service to
             our clientele. We&apos;ve had the honor of being the firm of choice
             of the following corporations:

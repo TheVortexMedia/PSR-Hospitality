@@ -26,7 +26,7 @@ export function Testimonials() {
         <div className="mb-12">
           <h2
             className="text-4xl md:text-5xl font-bold mb-4 italic"
-            style={{ color: "#214280" }}
+            style={{ color: "#1c3f60" }}
           >
             What Our Customers Say
           </h2>
@@ -50,7 +50,7 @@ export function Testimonials() {
                 className="flex-shrink-0 w-[340px] h-[420px] rounded-2xl shadow-2xl relative overflow-hidden"
                 style={{
                   background:
-                    "linear-gradient(to bottom right, #214280, #214280, #214280)",
+                    "linear-gradient(to bottom right, #1c3f60, #1c3f60, #1c3f60)",
                 }}
               >
                 {/* Quote mark */}

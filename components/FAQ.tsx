@@ -18,7 +18,7 @@ export function FAQ() {
         <div className=" md:text-left text-center mb-12">
           <h2
             className="text-3xl md:text-5xl font-light mb-4 italic"
-            style={{ color: "#214280" }}
+            style={{ color: "#1c3f60" }}
           >
             Frequently Asked Questions
           </h2>
@@ -37,11 +37,11 @@ export function FAQ() {
         >
           <AccordionItem
             value="item-1"
-            className="border-b border-[#214280]/25 px-3 md:px-6 py-1"
+            className="border-b border-[#1c3f60]/25 px-3 md:px-6 py-1"
           >
             <AccordionTrigger
               className="text-left font-medium hover:no-underline text-sm md:text-base"
-              style={{ color: "#214280" }}
+              style={{ color: "#1c3f60" }}
             >
               What types of events do you cater to?
             </AccordionTrigger>
@@ -56,11 +56,11 @@ export function FAQ() {
 
           <AccordionItem
             value="item-2"
-            className="border-b border-[#214280]/25 px-3 md:px-6 py-1"
+            className="border-b border-[#1c3f60]/25 px-3 md:px-6 py-1"
           >
             <AccordionTrigger
               className="text-left font-medium hover:no-underline text-sm md:text-base"
-              style={{ color: "#214280" }}
+              style={{ color: "#1c3f60" }}
             >
               Do you offer both vegetarian and non-vegetarian options?
             </AccordionTrigger>
@@ -75,11 +75,11 @@ export function FAQ() {
 
           <AccordionItem
             value="item-3"
-            className="border-b border-[#214280]/25 px-3 md:px-6 py-1"
+            className="border-b border-[#1c3f60]/25 px-3 md:px-6 py-1"
           >
             <AccordionTrigger
               className="text-left font-medium hover:no-underline text-sm md:text-base"
-              style={{ color: "#214280" }}
+              style={{ color: "#1c3f60" }}
             >
               Can the menu be customized for my event?
             </AccordionTrigger>
@@ -93,11 +93,11 @@ export function FAQ() {
 
           <AccordionItem
             value="item-4"
-            className="border-b border-[#214280]/25 px-3 md:px-6 py-1"
+            className="border-b border-[#1c3f60]/25 px-3 md:px-6 py-1"
           >
             <AccordionTrigger
               className="text-left font-medium hover:no-underline text-sm md:text-base"
-              style={{ color: "#214280" }}
+              style={{ color: "#1c3f60" }}
             >
               How far in advance should I book your services?
             </AccordionTrigger>
@@ -112,11 +112,11 @@ export function FAQ() {
 
           <AccordionItem
             value="item-5"
-            className="border-b border-[#214280]/25 px-3 md:px-6 py-1"
+            className="border-b border-[#1c3f60]/25 px-3 md:px-6 py-1"
           >
             <AccordionTrigger
               className="text-left font-medium hover:no-underline text-sm md:text-base"
-              style={{ color: "#214280" }}
+              style={{ color: "#1c3f60" }}
             >
               Do you handle setup and service as well?
             </AccordionTrigger>

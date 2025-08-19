@@ -64,20 +64,20 @@ more than 200 players and guests. The food was fresh, tasty, and served exactly
 on time. Their team made sure the menu had enough variety to keep everyone
 happy. It was a truly professional catering service that matched the energy of
 the event.`,
-    author: "Rahul Verma",
-    role: "Cricket Team Owner",
+    author: "Adharsh",
+    role: "Cricketer",
     rating: 5,
-    avatar: "/images/bg.png",
+    avatar: "/images/testimonials/1.png",
   },
   {
     text: `For our housewarming ceremony, PSR Hospitality provided delicious meals that
 all our guests enjoyed. The service was smooth from start to finish, and every
 dish was cooked perfectly. They made sure to keep everything clean and wellpresented. It felt like a special occasion made even better by great food and
 friendly staff`,
-    author: "Ananya Rao",
-    role: "Housewarming Host",
+    author: "Vinay",
+    role: "Software Developer",
     rating: 5,
-    avatar: "/images/bg.png",
+    avatar: "/images/testimonials/3.png",
   },
   {
     text: `The food at our hostel is something I look forward to every day. PSR Hospitality
@@ -88,7 +88,7 @@ home.`,
     author: "Ankitha",
     role: "B.Sc Nursing Student",
     rating: 5,
-    avatar: "/images/bg.png",
+    avatar: "/images/testimonials/2.png",
   },
   {
     text: `With PSR Hospitality, hostel meals are no longer plain or repetitive. The food is
@@ -97,7 +97,7 @@ very clean. The variety they offer makes eating here a happy part of my day.`,
     author: "Shakthi",
     role: "B.Sc Nursing Student",
     rating: 5,
-    avatar: "/images/bg.png",
+    avatar: "/images/testimonials/4.png",
   },
 ]
 

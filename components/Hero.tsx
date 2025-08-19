@@ -66,7 +66,7 @@ export function Hero() {
           <Dialog>
             <DialogTrigger asChild>
               <Button
-                className="bg-[#FBD65D] text-[#214280] rounded-full font-normal transition-colors hover:bg-[#FBD65D]"
+                className="bg-[#FBD65D] text-[#1c3f60] rounded-full font-normal transition-colors hover:bg-[#FBD65D]"
                 size="lg"
               >
                 Explore now
@@ -96,7 +96,7 @@ export function Hero() {
                     value={formData.name}
                     onChange={handleSubmit}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all"
                     placeholder="Your full name"
                   />
                 </div>
@@ -115,7 +115,7 @@ export function Hero() {
                     value={formData.email}
                     onChange={handleSubmit}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -133,7 +133,7 @@ export function Hero() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleSubmit}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all"
                     placeholder="+1 (555) 123-4567"
                   />
                 </div>
@@ -152,7 +152,7 @@ export function Hero() {
                     value={formData.message}
                     onChange={handleSubmit}
                     rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#214280]/10 focus:border-transparent transition-all resize-vertical"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1c3f60]/10 focus:border-transparent transition-all resize-vertical"
                     placeholder="Tell us about your event requirements, dietary preferences, or any special requests..."
                   />
                 </div>

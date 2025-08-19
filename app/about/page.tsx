@@ -12,7 +12,7 @@ const AboutPage = () => {
           <div className="flex-1 lg:pr-8">
             <h1
               className={`text-5xl lg:text-8xl font-thin leading-tight italic text-center font-georgia`}
-              style={{ color: "#214280" }}
+              style={{ color: "#1c3f60" }}
             >
               Catering Solutions For Every Need.
             </h1>
@@ -20,7 +20,7 @@ const AboutPage = () => {
 
           {/* Right Side - Team Photo */}
           <div className="flex-1">
-            <div className="relative bg-[#214280] p-1.5 rounded-xl shadow-lg">
+            <div className="relative bg-[#1c3f60] p-1.5 rounded-xl shadow-lg">
               <div className="rounded-lg overflow-hidden">
                 <Image
                   src="/images/chef.png"
@@ -37,7 +37,7 @@ const AboutPage = () => {
       </div>
 
       {/* Description Section */}
-      <div className="text-white py-16" style={{ backgroundColor: "#214280" }}>
+      <div className="text-white py-16" style={{ backgroundColor: "#1c3f60" }}>
         <div className="w-11/12 md:w-10/12 mx-auto px-4">
           <div className="space-y-8">
             {/* First Paragraph */}
