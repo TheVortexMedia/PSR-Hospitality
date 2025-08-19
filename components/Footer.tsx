@@ -51,7 +51,7 @@ export function Footer() {
               {/* Phone Number */}
               <div className="space-y-1">
                 <h4 className="font-semibold text-zinc-400">Phone Number</h4>
-                <p className="text-white">91+ 9731755669</p>
+                <p className="text-white">+91 9731755669</p>
               </div>
 
               {/* Email Address */}

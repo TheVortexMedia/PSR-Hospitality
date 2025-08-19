@@ -10,7 +10,7 @@ const Menu = () => {
       title: "South Indian Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/4.png",
+      image: "/images/food/img (4).jpg",
       menuItems: [
         `Idli / Vada / Bonda
         Upma / Khara Bath
@@ -31,7 +31,7 @@ const Menu = () => {
       title: "North Indian Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/4.png",
+      image: "/images/food/img (2).jpg",
       menuItems: [
         `Chapathi / Poori / Batura
           Rumali Roti / Naan / Kulcha / Tandoori Roti
@@ -48,7 +48,7 @@ const Menu = () => {
       title: "Buffet Menu (Ideal for Events)",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/4.png",
+      image: "/images/food/img (3).jpg",
       menuItems: [
         `Welcome Drink: Lemon Juice / Jaljeera / Buttermilk
           Soup (Tomato / Sweet Corn / Hot & Sour)
@@ -65,7 +65,7 @@ const Menu = () => {
       title: "Non-Veg Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/4.png",
+      image: "/images/food/img (5).jpg",
       menuItems: [
         `Chicken Curry (Andhra / Punjabi Style)
           Pepper Chicken / Chicken 65 / Chicken Kabab
@@ -80,7 +80,7 @@ const Menu = () => {
       title: "Snacks Menu",
       description:
         "Balanced and satisfying lunch options, tailored for mass dining without compromising on flavour.",
-      image: "/images/4.png",
+      image: "/images/food/img (1).jpg",
       menuItems: [
         `Samosa
           Vada / Masala Vada
